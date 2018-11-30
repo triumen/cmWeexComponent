@@ -1,0 +1,55 @@
+
+$normal-text-color: #333333;
+$sec-text-color: #999999;
+$sup-text-color: #cccccc;
+$nav-bg-color: #f8f8f8;
+$nav-text-color: #888888;
+$border-color: #dddddd;
+$bg-color: #f5f5f5;
+$active-color: #eeeeee;
+
+
+$title-size: 36px;
+$sec-size: 32px;
+$normal-size: 28px;
+$sup-size: 24px;
+$small-size: 20px;
+
+$icon-size: 44px;
+
+.text--normal {
+   font-size: $normal-size;
+   color: $normal-text-color; 
+}
+
+.page {
+    width: 750px;
+    height: 1334px;
+}
+
+/* 边框定义 */
+@mixin  border($width, $style, $color) {
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+}
+@mixin  border-left($width, $style, $color) {
+    border-left-width: $width;
+    border-left-style: $style;
+    border-left-color: $color;
+}
+@mixin  border-right($width, $style, $color) {
+    border-right-width: $width;
+    border-right-style: $style;
+    border-right-color: $color;
+}
+@mixin  border-top($width, $style, $color) {
+    border-top-width: $width;
+    border-top-style: $style;
+    border-top-color: $color;
+}
+@mixin  border-bottom($width, $style, $color) {
+    border-bottom-width: $width;
+    border-bottom-style: $style;
+    border-bottom-color: $color;
+}
